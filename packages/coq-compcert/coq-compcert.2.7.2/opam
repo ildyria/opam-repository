@@ -9,9 +9,10 @@ build: [
   ["./configure" "ia32-linux" {os = "linux"}
   		 "ia32-macosx" {os = "darwin"}
 		 "ia32-cygwin" {os = "cygwin"}
-		 "-bindir" "%{bin}%" "-libdir" "%{lib}%/coq/user-contrib/Compcert"
+		 "-bindir" "%{bin}%"
+		 "-libdir" "%{lib}%/coq/user-contrib/Compcert"
 		 "-clightgen"
-		 "-ignore-coq-version"]
+		 ]
   [make "-j%{jobs}%"]
 ]
 install: [
