@@ -1,6 +1,6 @@
 opam-version: "1.2"
 name: "coq-coqprime"
-version: "1.3"
+version: "dev"
 maintainer: ""
 homepage: "http://coqprime.gforge.inria.fr/"
 bug-reports: "http://coqprime.gforge.inria.fr/"
