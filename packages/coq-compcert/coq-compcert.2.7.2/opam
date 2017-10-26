@@ -6,7 +6,7 @@ homepage: "http://compcert.inria.fr/"
 bug-reports: "http://ildyria.github.com/compcert/issues/"
 License: "LICENCE"
 build: [
-  [mkdir "-p" "%{lib}%/coq/user-contrib/compcert"]
+  ["mkdir" "-p" "%{lib}%/coq/user-contrib/compcert"]
   ["./configure" "-clightgen" "ia32-linux" "-prefix" "%{lib}%/coq/user-contrib/compcert"]
   [make "-j%{jobs}%"]
   [make "install"]
