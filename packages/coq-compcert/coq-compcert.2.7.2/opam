@@ -1,6 +1,6 @@
 opam-version: "1.2"
 name: "coq-compcert"
-version: "2.7.2.3"
+version: "2.7.2"
 maintainer: ""
 homepage: "http://compcert.inria.fr/"
 bug-reports: "http://ildyria.github.com/compcert/issues/"
