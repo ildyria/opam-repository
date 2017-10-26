@@ -1,0 +1,17 @@
+opam-version: "1.2"
+name: "coq-compcert"
+version: "2.7.2.3"
+maintainer: ""
+homepage: "http://compcert.inria.fr/"
+bug-reports: "http://ildyria.github.com/compcert/issues/"
+License: "LICENCE"
+build: [
+  ["./configure -clightgen ia32-linux"]
+  [make "-j%{jobs}%"]
+  [make "install"]
+]
+remove: ["rm" "-R" "%{lib}%/coq/user-contrib/Coqprime"]
+depends: [
+  "coq" {>= "8.7"}
+  "menhir" {>= 20161201}
+]
