@@ -13,4 +13,5 @@ remove: ["rm" "-R" "%{lib}%/coq/user-contrib/tweetnacl"]
 depends: [
   "coq" {>= "8.7"}
   "coq-coqprime"
+  "coq-ssr-elliptic-curves"
 ]
