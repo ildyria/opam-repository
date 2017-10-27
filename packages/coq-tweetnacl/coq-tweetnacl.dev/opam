@@ -6,12 +6,19 @@ homepage: ""
 bug-reports: ""
 License: "MIT"
 build: [
-  [make "-j%{jobs}%"]
-  [make "install"]
-]
-remove: ["rm" "-R" "%{lib}%/coq/user-contrib/tweetnacl"]
+	[make "-j%{jobs}%"]
+	]
+install: [
+	["mkdir" "-p" "%{lib}%/coq/user-contrib/Tweetnacl"]
+	["cp" "-r" "Libs" "%{lib}%/coq/user-contrib/Tweetnacl/"]
+	["cp" "-r" "ListsOp" "%{lib}%/coq/user-contrib/Tweetnacl/"]
+	["cp" "-r" "Low" "%{lib}%/coq/user-contrib/Tweetnacl/"]
+	["cp" "-r" "Mid" "%{lib}%/coq/user-contrib/Tweetnacl/"]
+	["cp" "-r" "High" "%{lib}%/coq/user-contrib/Tweetnacl/"]
+	]
+remove: ["rm" "-R" "%{lib}%/coq/user-contrib/Tweetnacl"]
 depends: [
-  "coq" {>= "8.7"}
+  "coq" {>= "8.7.0"}
   "coq-coqprime" {= "dev"}
   "coq-ssr-elliptic-curves"
   "coq-mathcomp-ssreflect"
