@@ -12,8 +12,7 @@ dev-repo: "https://github.com/ildyria/VST.git"
 bug-reports: "https://github.com/ildyria/VST/issues"
 license: "https://raw.githubusercontent.com/PrincetonUniversity/VST/master/LICENSE"
 build: [
-	["echo" "'COMPCERT=%{lib}%/coq/user-contrib/compcert'" ">" "CONFIGURE"] 
-	[make "-j%{jobs}%"]
+	[make "-j%{jobs}%" "COMPCERT=%{lib}%/coq/user-contrib/compcert"]
 	]
 install: [
 	["mkdir" "-p" "%{lib}%/coq/user-contrib/VST"]
