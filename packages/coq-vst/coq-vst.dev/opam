@@ -12,7 +12,7 @@ dev-repo: "https://github.com/PrincetonUniversity/VST.git"
 bug-reports: "https://github.com/PrincetonUniversity/VST/issues"
 license: "https://raw.githubusercontent.com/PrincetonUniversity/VST/master/LICENSE"
 build: [
-	[make "-j%{jobs}%" "COMPCERT=%{lib}%/coq/user-contrib/compcert"]
+	[make "-j%{jobs}%" "COMPCERT=%{lib}%/coq/user-contrib/compcert" ".loadpath" "version.vo" "msl" "veric" "floyd"]
 	]
 install: [
 	["mkdir" "-p" "%{lib}%/coq/user-contrib/VST"]
