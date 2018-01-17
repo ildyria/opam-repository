@@ -2,7 +2,7 @@ opam-version: "1.2"
 maintainer: "Matej Košík <matej.kosik@inria.fr>"
 author: "Xavier Leroy <xavier.leroy@inria.fr>"
 homepage: "http://compcert.inria.fr/"
-dev-repo: "https://github.com/AbsInt/CompCert.git"
+dev-repo: "https://github.com/ildyria/CompCert.git"
 bug-reports: "https://github.com/AbsInt/CompCert/issues"
 license: "INRIA Non-Commercial License Agreement"
 build: [
@@ -27,6 +27,6 @@ remove: [
 
 ]
 depends: [
-  "coq" {= "dev"}
+  "coq" {>= "8.7.0"}
   "menhir" {>= "20160303"}
 ]
