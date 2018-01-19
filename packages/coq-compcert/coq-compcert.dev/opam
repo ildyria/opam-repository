@@ -21,10 +21,8 @@ install: [
 remove: [
   ["rm" "%{bin}%/ccomp"]
   ["rm" "%{bin}%/clightgen"]
-  ["rm" "-R" "%{lib}%/compcert"]
   ["rm" "%{share}%/compcert.ini"]
   ["rm" "-R" "%{lib}%/coq/user-contrib/compcert"]
-
 ]
 depends: [
   "coq" {>= "8.7.0"}
