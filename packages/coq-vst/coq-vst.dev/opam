@@ -1,12 +1,17 @@
 opam-version: "1.2"
 authors: ["Andrew W. Appel"
-          "Lennart Beringer"
-          "Jean-Marie Madiot"
-          "Qinxiang Cao"
-          "Santiago Cuellar"
-          "Nick Giannarakis"
-         ]
-maintainer: ""
+  "Lennart Beringer"
+  "Sandrine Blazy"
+  "Qinxiang Cao"
+  "Santiago Cuellar"
+  "Robert Dockins"
+  "Josiah Dodds"
+  "Nick Giannarakis"
+  "Samuel Gruetter"
+  "Aquinas Hobor"
+  "Jean-Marie Madiot"
+  ]
+maintainer: "VST team"
 homepage: "http://vst.cs.princeton.edu/"
 dev-repo: "https://github.com/PrincetonUniversity/VST.git"
 bug-reports: "https://github.com/PrincetonUniversity/VST/issues"
@@ -25,7 +30,7 @@ remove: [
 	["rm" "-fr" "%{lib}%/coq/user-contrib/VST"]
 	]
 depends: [
-  "coq" {>= "8.7.0"}
-  "coq-compcert" {= "dev"}
+  "coq" {>= "8.8.0"}
+  "coq-compcert" {>= "dev"}
 ]
 tags: []
