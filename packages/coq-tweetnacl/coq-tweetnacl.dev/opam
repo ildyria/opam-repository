@@ -10,12 +10,7 @@ build: [
   [make "-j%{jobs}%"]
 ]
 install: [
-  ["mkdir" "-p" "%{lib}%/coq/user-contrib/Tweetnacl"]
-  ["cp" "-r" "Libs" "%{lib}%/coq/user-contrib/Tweetnacl/"]
-  ["cp" "-r" "ListsOp" "%{lib}%/coq/user-contrib/Tweetnacl/"]
-  ["cp" "-r" "Low" "%{lib}%/coq/user-contrib/Tweetnacl/"]
-  ["cp" "-r" "Mid" "%{lib}%/coq/user-contrib/Tweetnacl/"]
-  ["cp" "-r" "High" "%{lib}%/coq/user-contrib/Tweetnacl/"]
+  [make "install"]  
 ]
 remove: ["rm" "-R" "%{lib}%/coq/user-contrib/Tweetnacl"]
 depends: [
