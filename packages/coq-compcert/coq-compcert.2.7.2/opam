@@ -4,7 +4,7 @@ version: "2.7.2"
 maintainer: ""
 homepage: "http://compcert.inria.fr/"
 bug-reports: "http://ildyria.github.com/compcert/issues/"
-License: "LICENCE"
+license: "LICENCE"
 build: [
   ["./configure" "ia32-linux" {os = "linux"}
   		 "ia32-macosx" {os = "darwin"}
