@@ -6,18 +6,17 @@ homepage: "https://gitlab.science.ru.nl/benoit/tweetnacl/"
 bug-reports: "none"
 license: "MIT"
 build: [
-  ["./configure.sh"] 
+  ["./configure.sh"]
   [make "-j%{jobs}%"]
 ]
 install: [
-  [make "install"]  
+  [make "install"]
 ]
 remove: ["rm" "-R" "%{lib}%/coq/user-contrib/Tweetnacl"]
 depends: [
   "coq" {>= "8.7.0"}
-  "coq-coqprime" 
+  "coq-coqprime"
   "coq-stdpp"
   "coq-ssr-elliptic-curves"
   "coq-mathcomp-ssreflect"
 ]
-
