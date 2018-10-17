@@ -18,5 +18,6 @@ depends: [
   "coq-coqprime"
   "coq-stdpp"
   "coq-ssr-elliptic-curves"
+  "coq-mathcomp-multinomials"
   "coq-mathcomp-ssreflect"
 ]
