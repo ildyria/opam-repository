@@ -1,9 +1,7 @@
-opam-version: "1.2"
+opam-version: "2.0"
 name: "coq-tweetnacl"
-version: "dev"
 maintainer: "benoit@cs.ru.nl"
 homepage: "https://gitlab.science.ru.nl/benoit/tweetnacl/"
-bug-reports: "none"
 license: "MIT"
 build: [
   ["./configure.sh"]
@@ -21,3 +19,13 @@ depends: [
   "coq-mathcomp-multinomials"
   "coq-mathcomp-ssreflect"
 ]
+author: [
+  "benoit@cs.ru.nl"
+  "timmy@timmyweerwag.nl"
+  ]
+description: """
+Model to verify Tweetnacl
+"""
+url {
+  src: "git+https://gitlab.science.ru.nl/benoit/tweetnacl.git#master"
+}
