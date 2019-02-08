@@ -22,7 +22,7 @@ depends: [
   "coq-mathcomp-ssreflect"  {>= "1.6" & < "1.8"}
   "coq-mathcomp-algebra"
   "coq-mathcomp-field"
-  "coq-mathcomp-multinomials"  {>= "1.6" & < "1.8"}
+  "coq-mathcomp-multinomials"  {= "1.1"}
 ]
 synopsis:
   "A Formal Library about Elliptic Curves for the Mathematical Components Library."
