@@ -8,7 +8,7 @@ authors: [
   "Karmaki"
 ]
 build: [
-  [autoconf]
+  ["autoconf"]
   ["./configure"]
   [make "-j%{jobs}%"]
 ]
@@ -19,6 +19,7 @@ remove: ["rm" "-R" "%{lib}%/coq/user-contrib/dpdgraph"]
 depends: [
   "ocaml"
   "coq" {>= "8.7" & < "8.9"}
+  "conf-autoconf"
   "ocamlgraph"
 ]
 description:"""
