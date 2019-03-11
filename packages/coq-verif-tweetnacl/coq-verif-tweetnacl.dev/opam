@@ -17,7 +17,7 @@ depends: [
   "coq-stdpp"
   "coq-ssr-elliptic-curves"
   "coq-mathcomp-ssreflect"
-  "coq-vst" {>= "2.0" & < "2.1"}
+  "coq-vst" {= "2.0"}
   "coq-tweetnacl"
 ]
 author: [
